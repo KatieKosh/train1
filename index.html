@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Document</title>
+ <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+
+
+  <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+<script src="moment.js"></script>
+    <script>
+      //moment().format();
+      var time = moment().format('dddd');
+      console.log(time);
+
+
+
+var currentTimeView = moment().format('LT');
+console.log(currentTimeView);
+
+console.log(currentTimeView + "25minutes");
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+
+
+
+  <div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+        <div class="jumbotron" style="background-image: url('/Users/kathrynkoshinski/ut-coding-bootcamp/train/eight_horns/eight_horns.png');">
+
+            <h1>Forgotten Pop-Stars Train Schedule</h1>
+              </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+
+      <table class="table">
+          <h2>Next Arrival</h2>
+        <thead>
+          <tr>
+            <th>Train</th>
+            <th>Destination</th>
+            <th>Frequency (minutes)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sporty Spice</td>
+            <td>Denver</td>
+            <td>25</td>
+            <td>
+          </tr>
+          <tr>
+            <td>Lisa Loeb</td>
+            <td>San Diego</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Semisonic</td>
+            <td>Los Angeles</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>Macy Gray</td>
+            <td>Chicago</td>
+            <td>300</td>
+          </tr>
+          <tr>
+            <td>Shakira</td>
+            <td>Portland</td>
+            <td>750</td>
+          </tr>
+          <tr>
+            <td>Timberlake</td>
+            <td>Boston</td>
+            <td>1300</td>
+          </tr>
+          </tbody>
+      </table>
+    </div>
+
+
+
+<div id = "addTrain">
+    <h2>Add Train</h2>
+    <div class="form-group">
+      <label for="usr">Train Name</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group">
+      <label for="destination">Destination</label>
+      <input type="destination" class="form-control" id="destination">
+    </div>
+    <div class="form-group">
+      <label for="firstTrainTime">First Train Time</label>
+      <input type="text" class="form-control" id="time">
+    </div>
+    <div class="form-group">
+      <label for="frequency">Frequency Train Time</label>
+      <input type="text" class="form-control" id="frequency">
+    </div>
+<button type="button" class="btn btn-primary btn-lg">Submit</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="train.js"></script>
+
+</div>
+</div>
+
+</body>
+</html>
